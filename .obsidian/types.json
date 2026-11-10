@@ -1,0 +1,23 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Created date": "date",
+    "Category": "multitext",
+    "Been there": "checkbox",
+    "Rating": "number",
+    "Smoked": "checkbox",
+    "Snacked": "checkbox",
+    "Exercised": "checkbox",
+    "Sleep Hour": "number",
+    "Read": "checkbox",
+    "Code": "checkbox",
+    "Deepwork": "number",
+    "Phone No": "multitext",
+    "DoB": "date",
+    "Signature": "multitext",
+    "People": "multitext",
+    "Suitable Scenario": "multitext"
+  }
+}

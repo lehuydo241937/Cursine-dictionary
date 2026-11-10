@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.hasTag("Place")
+    - '!file.name.contains("Template")'
+    - '!file.name.contains("Base")'
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("Restaurant")
+    groupBy:
+      property: Been there
+      direction: ASC
+    order:
+      - file.name
+      - Suitable Scenario
+      - Signature
+      - District
+      - Address
+      - Rating
+      - URL
+    sort:
+      - property: Rating
+        direction: DESC
+    columnSize:
+      note.Address: 166

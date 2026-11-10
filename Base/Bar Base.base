@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.tags.contains("Place")
+    - '!file.name.contains(".template")'
+    - '!file.name.contains(".base")'
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.tags.contains("Bar")
+        - file.tags.contains("Cafe")
+    groupBy:
+      property: Been there
+      direction: ASC
+    order:
+      - file.name
+      - Suitable Scenario
+      - Signature
+      - Address
+      - URL
+      - Rating
+    sort:
+      - property: Rating
+        direction: DESC

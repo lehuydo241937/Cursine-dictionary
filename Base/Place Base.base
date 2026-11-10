@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.hasTag("Place")
+    - '!file.name.contains("Template")'
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("Bar")
+    groupBy:
+      property: Been there
+      direction: ASC
+    order:
+      - file.name
+      - Signature
+      - Address
+      - URL
+    sort:
+      - property: file.name
+        direction: ASC

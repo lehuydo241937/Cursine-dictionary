@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.hasTag("Event")
+    - '!file.name.contains(".template")'
+    - '!file.name.contains(".base")'
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - People.contains(this.file.name)
+    order:
+      - Created date
+      - file.name
